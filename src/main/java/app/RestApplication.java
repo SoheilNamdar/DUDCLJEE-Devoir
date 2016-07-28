@@ -9,8 +9,9 @@ import org.jboss.resteasy.plugins.server.undertow.UndertowJaxrsServer;
 
 import io.swagger.jaxrs.config.BeanConfig;
 import io.undertow.Undertow;
-import web.rest.DepartementResource;
-import web.rest.EmployeeResource;
+import web.rest.EquipmentResource;
+import web.rest.PersonneResource;
+import web.rest.ResidenceResource;
 import web.rest.StaticResource;
 import web.rest.SwaggerResource;
 
@@ -40,8 +41,9 @@ public class RestApplication extends Application {
         final Set<Class<?>> resources = new HashSet<>();
 
         // REST endpoints
-        resources.add(DepartementResource.class);
-        resources.add(EmployeeResource.class);
+        resources.add(PersonneResource.class);
+        resources.add(ResidenceResource.class);
+        resources.add(EquipmentResource.class);
 
         // SWAGGER endpoints
         resources.add(io.swagger.jaxrs.listing.ApiListingResource.class);
