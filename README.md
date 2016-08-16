@@ -47,7 +47,9 @@ La structuration en packages sépare clairement les classes métier (package dom
 Une fois l'application lancez, testez cette application.
 
 * [http://localhost:8080](http://localhost:8080) doit vous donner accès à l'application
-* [http://localhost:8080/equipment](http://localhost:8080/equipment) doit vous donner accès aux flux json retourner pour obtenir la liste des départements.
+* [http://localhost:8080/equipment](http://localhost:8080/equipment) doit vous donner accès aux flux json retourner pour obtenir la liste des equipment. On pourra faire pareil pour la class Personne et Residence.
+* [http://localhost:8080/personne/get/1/4] où 1 et 4 sont choisis par repport à /DUDCLJEETP/src/main/java/web/rest/PersonneResource.java où ces chiffres detérminent nombre d'heures et le nombre de jours de consommation d'énergie. 
+* [http://localhost:8080/residence]
 * [http://localhost:8080/api/](http://localhost:8080/api/) vous donne accès à swagger.
 
 Le code de l'appli angularjs se trouve dans src/main/webapp/app/
