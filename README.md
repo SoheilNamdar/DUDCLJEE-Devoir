@@ -13,12 +13,6 @@ Testez l'application.
 
 Cloner le repository
 
-```bash
-git clone
-https://github.com/barais/DUDCLJEETP.git
-```
-
-
 Lancez la base de données
 
 ```bash
@@ -53,16 +47,16 @@ La structuration en packages sépare clairement les classes métier (package dom
 Une fois l'application lancez, testez cette application.
 
 * [http://localhost:8080](http://localhost:8080) doit vous donner accès à l'application
-* [http://localhost:8080/department](http://localhost:8080/department) doit vous donner accès aux flux json retourner pour obtenir la liste des départements.
+* [http://localhost:8080/equipment](http://localhost:8080/equipment) doit vous donner accès aux flux json retourner pour obtenir la liste des départements.
 * [http://localhost:8080/api/](http://localhost:8080/api/) vous donne accès à swagger.
 
 Le code de l'appli angularjs se trouve dans src/main/webapp/app/
 
 Cette application a été générée en utilisant [yeoman](http://yeoman.io/) et le [générateur pour AngularJS](https://github.com/yeoman/generator-angular).
 
-##Travail à faire.
+##Travail réalisé
 
-En repartant des TPs effectués pendant le module. Dévelopez une application simple suivant le cahier des charges suivants.
+Dévelopez une application simple suivant le cahier des charges suivants.
 
 L’objectif de ce projet est de construire la partie métier/persitance d’une application type réseau social permettant de comparer sa consommation électrique avec ses amis, ses voisins, ... dans la lignée de opower.
 OPower est une société américaine qui est fondée sur un principe de base déjà porteur : grâce à son logiciel, il permet aux consommateurs de maîtriser leur consommation d’énergie. En effet, il travaille conjointement avec des fournisseurs de services publics (électricité, gaz, téléphone, etc.) pour promouvoir l'efficacité énergétique. Mais lorsqu’il se met à surfer sur la vague Facebook, Opower fait de l’économie d’énergie un jeu… qui pourrait séduire ses clients !
@@ -75,9 +69,9 @@ Prenez la liberté de compléter ce modèle métier au maximum.
 1. Développez ce modèle métier dans le package domain.
 2. Développez les classes repository contenant les actions de base à faire sur la base de données pour chacune de ces classes métiers.
 3. Développez une couche de service pour cette application dans le package (web.rest). Vous devrez modifier la classe RestApplication pour ajoutez vos nouvelles ressources.
-4. Développez une interface angularjs simple qui intéragit avec vos services.
+4. Développez une interface angularjs qui intéragit avec vos services est en cours de réalisation.
 
 N'hésitez pas à me contacter en cas de difficultés.
 
-Olivier
+Soheil
 # DUDCLJEE
