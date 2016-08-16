@@ -1,0 +1,45 @@
+
+<html>
+   <head>	  
+      <title>Liste des personnes et en déduire celle qui consomme plus que les autres</title>
+      
+      <style>
+         table, th , td {
+            border: 1px solid grey;
+            border-collapse: collapse;
+            padding: 5px;
+         }
+         
+         table tr:nth-child(odd) {
+            background-color: #f2f2f2;
+         }
+         
+         table tr:nth-child(even) {
+            background-color: #ffffff;
+         }
+      </style>
+   </head>
+   
+   <body ng-app="myApp">
+	<h2>Comparer</h2>
+      <div ng-controller="exemple1Ctrl">
+		<form> <!--ng-submit="myFunc"--> 
+			<h3>User 1</h3>
+			<input type="number" ng-model="p1" placeholder="Enter an id here">
+				
+			<h3>User 2</h3>
+			<input type="number" ng-model="p2" placeholder="Enter an id here">
+			
+			<br><br> <!--<input type="submit" value="Enter">
+				<button ng-click="myFunc()">OK</button> -->
+		
+			<hr />
+			<p> <b ng-bind="myFunc()"></b>  comsomme plus que son voisin ! </p>
+		</form>
+      </div>
+	  
+	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+    <script src = "userCompare.js"></script>
+	
+   </body>
+</html>

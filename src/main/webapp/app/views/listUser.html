@@ -1,0 +1,32 @@
+<html>
+	<head>
+      <title>Angular JS Controller</title>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	  <style>
+         table, th , td {
+            border: 1px solid grey;
+            border-collapse: collapse;
+            padding: 5px;
+         }
+         table th {
+            background-color: #f2f2f2;
+         } 
+      </style>
+	</head>
+
+	<body ng-app="myApp">
+		<div ng-controller="customersCtrl"> 
+			<table border = "0">
+				<tr>
+					<th>Name</th>
+					<th>ID</th>
+				</tr>
+				<tr ng-repeat="x in myData">
+					<td>{{ x.nom }}</td>
+					<td>{{ x.id }}</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+	<script src="listUser.js"></script>
+</html>
